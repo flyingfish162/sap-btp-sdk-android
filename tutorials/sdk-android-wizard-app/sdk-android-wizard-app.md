@@ -13,11 +13,11 @@ time: 30
 <!-- description --> Use the Android Studio-integrated SAP BTP SDK Wizard for Android to create a mobile app and configure it to make use of SAP Mobile Services features.
 
 ## Prerequisites
-- You have [Set Up a BTP Account for Tutorials](group.btp-setup). Follow the instructions to get an account, and then to set up entitlements and service instances for the following BTP services. (To just complete this tutorial mission (except tutorial 7 about translation hub), it's sufficient to simply [Get a Free Account on SAP BTP Trial](hcp-create-trial-account).)
+- You have [Set Up a BTP Account for Tutorials](https://developers.sap.com/tutorials/sdk-android-wizard-app.html). Follow the instructions to get an account, and then to set up entitlements and service instances for the following BTP services. (To just complete this tutorial mission (except tutorial 7 about translation hub), it's sufficient to simply [Get a Free Account on SAP BTP Trial](hcp-create-trial-account).)
     - **Mobile Services**
 - Make sure you can [Access SAP Mobile Services](fiori-ios-hcpms-setup).
-- Installed [Android Studio Hedgehog 2023.1.1](https://developer.android.com/studio/archive). Please use the specified version.
-- [Downloaded](https://developers.sap.com/trials-downloads.html?search=sdk%20for%20android) and [Installed](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/android/setup.html) version 24.4.x or higher of the SAP BTP SDK for Android.
+- Installed [Android Studio Koala 2024.1.1](https://developer.android.com/studio/archive). Please use the specified version.
+- [Downloaded](https://developers.sap.com/trials-downloads.html?search=sdk%20for%20android) and [Installed](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/android/setup.html) version 24.8.x or higher of the SAP BTP SDK for Android.
 - Created a Google account.
 
 ## You will learn
@@ -129,7 +129,7 @@ If you check the **Enable Push** checkbox, an error message is displayed explain
 
     ![Add google-services.json file to wizard](wizard-google-services-added.png)
 
-    >You can add push configuration on the server as in the [Send Notifications to Your Android Application](sdk-android-wizard-app-push) tutorial.
+    >You can add push configuration on the server as in the [Send Notifications to Your Android Application](https://developers.sap.com/tutorials/sdk-android-wizard-app-push.html) tutorial.
 
 7.  Click **Create** and proceed to **Step 3**.
 
@@ -142,10 +142,10 @@ If you check the **Enable Push** checkbox, an error message is displayed explain
 
     ![Project created](project-created.png)
 
-    >You may have a build error similar to: "Could not resolve all files for configuration ':classpath'......", open **Preferences** (Windows: **Settings**, Mac: **Android Studio > Settings...**) to change gradle jdk to 17.
+    >You may have a build error similar to: "Could not resolve all files for configuration `:classpath`......", open **Preferences** (Windows: **Settings**, Mac: **Android Studio > Settings...**) to change `gradle jdk` to 17.
     ![Set gradle jdk to 17](gradle-jdk.png)
 
-    >Finally, sync the project with the gradle files.
+    >Finally, sync the project with the `gradle` files.
     ![Sync project with gradle files](sync-gradle.png)
 
 2.  Choose an emulator for running the app.
@@ -195,7 +195,7 @@ If you check the **Enable Push** checkbox, an error message is displayed explain
 
     ![Products screen](products-screen.png)
 
-10.  Tap a list item to display the following editable detail screen.
+10. Tap a list item to display the following editable detail screen.
 
     ![Category detail](product-detail.png)
 

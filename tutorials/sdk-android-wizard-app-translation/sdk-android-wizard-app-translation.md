@@ -13,7 +13,7 @@ keywords: sdkforandroid
 <!-- description --> See how the SAP Translation Hub can be used to quickly add support for a new language to your app.
 
 ## Prerequisites
-- You completed [Try Out SAP BTP SDK Wizard for Android](sdk-android-wizard-app).
+- You completed [Try Out SAP BTP SDK Wizard for Android](https://developers.sap.com/tutorials/sdk-android-wizard-app.html).
 
 
 ## You will learn
@@ -46,7 +46,7 @@ The following code in the `WelcomeStepFragment` class, in the `onCreateView` met
 
 ```Kotlin
 LaunchScreenSettings.Builder()
-                .setHeaderLineLabel(getString(R.string.welcome_screen_headline_label))
+                .setHeaderLineLabel(getString(R.string.application_name))
 ```
 
 The `getString` method determines what the current local language is on the device or emulator and then reads from the matching strings file.
@@ -96,8 +96,8 @@ The [SAP Translation Hub](https://help.sap.com/viewer/product/SAP_TRANSLATION_HU
 
       | Global Account | URL | Sample URL |
       |:----|:----|:----|
-      | Trial | `https://saptranslation-<subaccountname>.hanatrial.ondemand.com` | https://saptranslation-s0001001002trial.hanatrial.ondemand.com |
-      | Enterprise | `https://sap<provider subaccount name>-<subscription subaccount name>.<region host>` | https://sapa7d6108fa-c77539gg5d.hana.ondemand.com |
+      | Trial | `https://saptranslation-<subaccountname>.hanatrial.ondemand.com` | `https://saptranslation-s0001001002trial.hanatrial.ondemand.com` |
+      | Enterprise | `https://sap<provider subaccount name>-<subscription subaccount name>.<region host>` | `https://sapa7d6108fa-c77539gg5d.hana.ondemand.com` |
 
     - **Username** and **Password** – The credentials of your SAP BTP account.
 
@@ -115,9 +115,9 @@ The [SAP Translation Hub](https://help.sap.com/viewer/product/SAP_TRANSLATION_HU
 
     ![Translation Wizard Page 2](wiz-page3b.png)
 
-6.  Press **Finish** and wait for a few moments. The **Event Log** should print `Success: Project translated successfully`.
+6.  Press **Finish** and wait for a few moments. A pop-up window will print `Success Project translated successfully`.
 
-    There should now be two additional files, `strings_localized.xml(ca)` and `strings.xml(ca)`.
+    There should now be an additional file, `strings_localized.xml(ca)` or `strings.xml(ca)`.
 
     ![Translation Result](translation-result.png)
 
